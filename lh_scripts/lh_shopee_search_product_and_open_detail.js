@@ -35,4 +35,4 @@ await flow.snapshot()
 
 // Teardown: Close browser and generate report
 await browser.close();
-writeFileSync('report.html', await flow.generateReport());
+writeFileSync('../.report/lh_shopee_search_product_and_open_detail.html', await flow.generateReport());

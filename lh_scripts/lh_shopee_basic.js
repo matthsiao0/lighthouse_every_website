@@ -8,7 +8,7 @@ const runnerResult = await lighthouse('https://shopee.tw/', options);
 
 // `.report` is the HTML report as a string
 const reportHtml = runnerResult.report;
-fs.writeFileSync('shopee_lighthouse_report.html', reportHtml);
+fs.writeFileSync('../.reports/shopee_lighthouse_report.html', reportHtml);
 
 // `.lhr` is the Lighthouse Result as a JS object
 console.log('Report is done for', runnerResult.lhr.finalDisplayedUrl);

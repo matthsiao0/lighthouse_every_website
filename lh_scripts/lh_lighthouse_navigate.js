@@ -18,4 +18,4 @@ await flow.endNavigation()
 
 // Teardown: Close browser and generate report
 await browser.close();
-writeFileSync('./.reports/lighthouse_navigate.html', await flow.generateReport());
+writeFileSync('../.reports/lighthouse_navigate.html', await flow.generateReport());

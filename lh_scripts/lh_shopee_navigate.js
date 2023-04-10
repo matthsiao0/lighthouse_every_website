@@ -12,4 +12,4 @@ await flow.navigate('https://shopee.tw/');
 
 // Teardown: Close browser and generate report
 await browser.close();
-writeFileSync('./.reports/report.html', await flow.generateReport());
+writeFileSync('../.reports/lh_shopee_navigate.html', await flow.generateReport());
